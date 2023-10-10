@@ -27,8 +27,8 @@ public class Inventory {
 
 
     /**
-     *
-     * @return A list of all products in the inventory.
+     * A list of all products in the inventory.
+     * @return products
      */
     public List<Product> getAllProducts() {
         return products;

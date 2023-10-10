@@ -21,16 +21,16 @@ public class Product {
     private int quantity;
 
     /**
-     * Just another way to add Products if we wanted. Might not be used in later versions.
-     * @param productId
-     * @param name
-     * @param brand
-     * @param type
-     * @param color
-     * @param size
-     * @param material
-     * @param price
-     * @param quantity
+     * Way to add static product. Might not be used in later versions.
+     * @param productId Unique productID
+     * @param name name of product
+     * @param brand brand of product
+     * @param type type of product
+     * @param color color of product
+     * @param size size of product
+     * @param material material of product
+     * @param price price of product
+     * @param quantity quantity of product
      */
     public Product(int productId, String name, String brand, Type type, Color color, Size size, Material material, double price, int quantity) {
         this.productId = productId;
@@ -79,16 +79,26 @@ public class Product {
         SYNTHETIC_LEATHER, RUBBER, POLYESTER
     }
 
+
+    /**
+     * returns string of a Product
+     * @return A string containing the product's name, price, and quantity
+     */
     public String toString() {
         return "Product Name: " + name + "\nPrice: $" + price + "\nQuantity: " + quantity;
     }
+
+    /**
+     * Getter method for ProductId
+     * @return the productId of product
+     */
     public int getProductId(){
         return productId;
     }
 
     /**
-     * Method to update the Quantity of an item
-     * @param quantity
+     * Method to update the quantity of an item
+     * @param quantity the new quantity
      */
     public void updateQuantity(int quantity) {
         this.quantity += quantity;
@@ -96,23 +106,23 @@ public class Product {
 
     /**
      * Method to update Price of shoe
-     * @param newPrice
+     * @param newPrice the new price
      */
     public void updatePrice(double newPrice) {
         this.price = newPrice;
     }
 
     /**
-     * Method to Update sie of shoe
-     * @param newSize
+     * Method to Update size of product
+     * @param newSize the new Size of product
      */
     public void changeSize(Size newSize) {
         this.size = newSize;
     }
 
     /**
-     * Method to Update Color
-     * @param newColor
+     * Method to change the color of product
+     * @param newColor the new Color of product
      */
     public void changeColor(Color newColor) {
         this.color = newColor;
@@ -120,7 +130,7 @@ public class Product {
 
     /**
      * Updates Material
-     * @param newMaterial
+     * @param newMaterial the new material of product
      */
     public void updateMaterial(Material newMaterial) {
         this.material = newMaterial;
