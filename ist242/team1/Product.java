@@ -59,7 +59,6 @@ public class Product {
     }
     /**
      * Enums representing type of shoe.
-     *
      */
     public enum Type {
         RUNNING_SHOES, DRESS_SHOES, BOOTS

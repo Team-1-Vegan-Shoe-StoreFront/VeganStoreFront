@@ -19,7 +19,7 @@ public class Inventory {
 
     /**
      * Adds product to Inventory
-     * @param product The product added to inventory
+     * @param product The product added to Inventory
      */
     public void addProduct(Product product) {
         products.add(product);
